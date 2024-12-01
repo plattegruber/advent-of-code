@@ -3,7 +3,7 @@ import Data.List
 
 main :: IO ()
 main = do
-    input <- readFile "01.01.txt"
+    input <- readFile "01.txt"
     let (listOne, listTwo) = unzip $ map ((\[x, y] -> (read x, read y)) . words) (lines input)
         sortedOne = sort listOne
         sortedTwo = sort listTwo
